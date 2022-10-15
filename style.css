@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+body{
+    font-family: 'Karla', sans-serif;
+    background: hsl(204, 43%, 93%);
+    padding: 5rem 2rem;
+    height: 100vh;
+    color: white;
+    font-size: 16px
+    
+}
+footer{
+    color: black;
+}
+.container{
+    background: white;
+    border-radius: 5px;
+}
+
+.first{
+    background: #ffffff;
+    padding: 15px 30px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.secon{
+    background:hsl(179, 62%, 43%);
+    padding: 15px 30px;
+    border-bottom-left-radius:5px;
+}
+
+.third{
+    background:hsl(179, 62%, 43% ,0.699);
+    padding: 15px 30px;
+    border-bottom-right-radius:5px;
+}
+
+.secon .btn {
+    background-color: black;
+    padding: 0.7rem ;
+    text-decoration: none;
+    border-radius: 6px;
+    color: white;
+    display: block;
+    text-align: center;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
+  }
+  .btn:hover{
+    color: black;
+    background-color: white;
+  }
+
+  .third p {
+    font-size: 0.9rem;
+    line-height: 0.15rem;
+}
+
+.bigtext{
+    font-size: 2rem;
+}
+.cyan{
+    color:hsl(179, 62%, 43%);
+}
+.yellow{
+    color: hsl(71, 73%, 54%);
+}
+
+
+@media screen and (min-width: 594px){
+    body{
+        width: 636px;
+        margin: 0 auto;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 250px;
+      
+    }
+    .first{
+        grid-column: 2 span;
+    }
+}
