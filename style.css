@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--BrightYellow: hsl(71, 73%, 54%);
+--LightGray: hsl(204, 43%, 93%);
+--GrayishBlue: hsl(218, 22%, 67%);
+
+}
 
 body{
-    font-family: 'Karla', sans-serif;
-    background: hsl(204, 43%, 93%);
-    padding: 5rem 2rem;
-    height: 100vh;
+    font-family: 'Karla',Arial, Helvetica, sans-serif;
+    background: var(--LightGray);
     color: white;
-    font-size: 16px
+    font-size: 16px;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
     
+}
+.bold{
+    font-weight: 700;
+}
+.semi{
+    font-weight: 400;
 }
 footer{
     color: black;
@@ -15,6 +29,7 @@ footer{
 .container{
     background: white;
     border-radius: 5px;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
 }
 
 .first{
@@ -24,31 +39,33 @@ footer{
     border-top-left-radius: 5px;
 }
 .secon{
-    background:hsl(179, 62%, 43%);
+    background:var(--Cyan);
     padding: 15px 30px;
     border-bottom-left-radius:5px;
 }
 
 .third{
-    background:hsl(179, 62%, 43% ,0.699);
+    background:var(--GrayishBlue);
     padding: 15px 30px;
     border-bottom-right-radius:5px;
 }
+.per{
+    color: var(--LightGray);
+    margin-left: 1rem;
+}
 
 .secon .btn {
-    background-color: black;
-    padding: 0.7rem ;
+    background-color: var(--BrightYellow);
+    padding: 1rem 2rem ;
     text-decoration: none;
     border-radius: 6px;
     color: white;
     display: block;
     text-align: center;
     box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
+    margin-top: 2rem;
   }
-  .btn:hover{
-    color: black;
-    background-color: white;
-  }
+
 
   .third p {
     font-size: 0.9rem;
@@ -64,6 +81,14 @@ footer{
 .yellow{
     color: hsl(71, 73%, 54%);
 }
+.ul{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+    color: var(--LightGray);
+
+}
+
 
 
 @media screen and (min-width: 594px){
