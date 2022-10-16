@@ -45,12 +45,12 @@ footer{
 }
 
 .third{
-    background:var(--GrayishBlue);
+    background:hsl(179, 62%, 43% ,0.699);
     padding: 15px 30px;
     border-bottom-right-radius:5px;
 }
 .per{
-    color: var(--LightGray);
+    color: rgba(255, 255, 255, 0.705);
     margin-left: 1rem;
 }
 
